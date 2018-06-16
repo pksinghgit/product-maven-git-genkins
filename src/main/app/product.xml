@@ -15,7 +15,7 @@ http://www.springframework.org/schema/beans http://www.springframework.org/schem
         <apikit:console config-ref="product-config" doc:name="APIkit Console"/>
     </flow>
     <flow name="get:/product:product-config">
-        <flow-ref name="getproductsFlow" doc:name="Flow Reference"/>
+
         <set-payload value="{&#xA;&quot;name&quot; : &quot;Air conditioner&quot;,&#xA;&quot;price&quot; : 40000&#xA;}" doc:name="Set Payload"/>
     </flow>
     <apikit:mapping-exception-strategy name="product-apiKitGlobalExceptionMapping">
